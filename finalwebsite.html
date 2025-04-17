@@ -1,0 +1,249 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/image/background.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+        header {
+            background-color: lavenderblush;
+            color: #FF9191;
+            padding: 20px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0; left: 0;
+            width: 100%;
+            background-color: lavenderblush;
+            color: #ffffff;
+        }
+        nav a {
+            margin: 15px;
+            color: #ff9191;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover{
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        section {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .responsive-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image {
+            margin-right: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .info-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 100%;
+            margin: auto;
+        }
+        h2 {
+            text-align: left;
+            color: dimgray;
+        }
+        .info-item {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 4px solid gray;
+            background: #f9f9f9;
+        }
+        .info-item span {
+            font-weight: bold;
+        }
+        .hobby-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .hobby {
+            background-color: #fff;
+            border: 3px solid pink;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .hobby:hover {
+            transform: scale(1.05);
+        }
+        .hobby img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .hobby-title {
+            font-size: 20px;
+            color: dimgray;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: lavenderblush;
+            color: #ff9191;
+            position: relative;
+            bottom: 0;
+            width: auto;
+        }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            color: #ff9191;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: lavenderblush;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .hobby {
+                width: 90%;
+            }
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+        }
+        .info-container p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h1>Home</h1>
+        <div class="container">
+            <img src="/image/profile.jpeg" alt="profile" class="image responsive-image">
+            <p><h2>Hi! I'm Christine B. Manabat, a first-year Bachelor of Science in Information Technology student at Nueva Ecija University of Science and Technology.My experience being a student can be a time of growth and self-discovery, but for me, it has also involved silent struggles. Balancing academic pressure with personal challenges, I often faced financial difficulties that made it hard to concentrate, sometimes studying on an empty stomach. Home life added to the stress, and managing my mental health became an ongoing battle.
+Despite moments of wanting to give up and feeling lost about the future, I found strength in the dream of a better life, the support of friends, and my own resilience. Each exam passed and project completed felt like a small victory. My experiences taught me important lessons about survival, adaptability, and perseverance, which have proven more valuable than perfect grades as long as you didn't fail.</h2></p>
+        </div>
+    </section>
+    <section id="about">
+        <h1>About</h1>
+        <div class="info-container">
+            <h2>Personal Information</h2>
+            <div class="info-item">
+                <span>Birth Date:</span> August 17, 2006
+            </div>
+            <div class="info-item">
+                <span>Age:</span> 18 years old
+            </div>
+            <div class="info-item">
+                <span>Address:</span> Kalikid Sur, Cabanatuan City, Nueva Ecija.
+            </div>
+                     <h2>Education</h2>
+            <div class="info-item">
+                <span><h2>Primary</h2></span>
+                <p>Luis Gonzales Integrated School, 2012 - 2016</p>
+            </div>
+            <div class="info-item">
+                <span><h2>Secondary </h2></span>
+                <p>Maligaya National High School, 2016 - 2022</p>
+                <p>Camp Tinio National High School, 2022 - 2024</p>
+            </div>
+            <div class="info-item">
+                <span><h2>College</h2></span>
+                <p>Nueva Ecija University of Science and Technology, 1st Year Bachelor of Science in Information Communication.</p>
+            </div>
+            <h2>Goals as a Student and a Daughter</h2>
+            <div class="info-item">
+              <p>My goal as a student is to learn, to grow, and to never take this opportunity for granted. But my goal as a daughter is to lift the weight they carried for so long—to be the reason their sacrifices were worth it.
+Yes, the journey is hard. There are moments I feel tired, unsure, even lost. But when I think of my parents, I remember why I started. I’m not just doing this for me. I’m doing it for them for every time they believed in me when I couldn’t believe in myself.
+So I keep going. Because my dream isn’t just mine, it's theirs too.</p>
+            </div>
+            <h2>My Hobbies</h2>
+            <div class="hobby-container">
+                <div class="hobby">
+                    <img src="/image/capturing the sunset.jpg" alt="Hobby 1" class="responsive-image">
+                    <div class="hobby-title">Capturing the sunset</div>
+                </div>
+                <div class="hobby">
+                    <img src="/image/movies.jpg" alt="Hobby 2" class="responsive-image">
+                    <div class="hobby-title">Watching Movies</div>
+                </div>
+                <div class="hobby">
+                    <img src="/image/spent time.jpg" alt="Hobby 3" class="responsive-image">
+                    <div class="hobby-title">Spent time with my dogs and cats</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+       <p><center>Thanks for visiting! We hope you found what you were looking for.  Feel free to contact me if you have any questions.You can reach me through:</center></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/christine.manabat.39">
+                <img src="/image/fbicon.jpg" alt="Facebook Icon" style="width: 40px; height: 40px;">
+            </a>
+            <a href="https://www.instagram.com/yourgurl_christine">
+                <img src="/image/igicon.jpg" alt="Instagram Icon" style="width: 40px; height: 40px;">
+            </a> 
+            <a href="tel:+639106897689">
+                <img src="/image/contacticon.jpg" alt="Contact Icon" style="width: 40px; height: 40px;">
+            </a>
+            <a href="mailto:christinemanabat707@gmail.com">
+                <img src="/image/emailicon.jpg" alt="Contact Icon" style="width: 40px; height: 40px;">
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p><h3>&copy; 2025 My Personal Website</h3></p>
+        <a href="/Christine/intro.html" class="back-button"><h3>Back</h3></a>
+    </footer>
+</body>
+</html>
